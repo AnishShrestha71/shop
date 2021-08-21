@@ -26,7 +26,7 @@
                 <a href="/home"
                     class="text-2xl no-underline text-grey-darkest hover:text-blue-dark font-sans font-bold">Shrestha
                     Kirana Stores</a><br>
-                <span class="text-xs text-grey-dark">Baglung Buspark, Pokhara</span>
+                <span class="text-xs text-grey-dark"> Pokhara</span>
             </div>
         </div>
         @if (Auth::guard('web')->user())
