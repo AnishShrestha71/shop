@@ -30,7 +30,7 @@
                 <span class="text-xs text-grey-dark"> Pokhara</span>
             </div>
         </div>
-        @if (Auth::guard('web')->user())
+        @if (!empty(Auth::guard('web')->user()))
             <div class="sm:mb-0 self-center">
                 <a>{{ Auth::guard('web')->user()->name }}</a>
                 <a href="{{ route('user.add') }}"
