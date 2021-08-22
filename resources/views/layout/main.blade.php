@@ -30,9 +30,10 @@
                 <span class="text-xs text-grey-dark"> Pokhara</span>
             </div>
         </div>
-        @if (!empty(Auth::guard('web')->user()))
+        @if (!empty(Auth::user()))
             <div class="sm:mb-0 self-center">
-                <a>{{ Auth::guard('web')->user()->name }}</a>
+                {{dd(Auth::user())}}
+                <a>{{ Auth::user()->name }}</a>
                 <a href="{{ route('user.add') }}"
                     class="text-md no-underline text-grey-darker hover:text-blue-dark ml-2 px-1">Add Item</a>
                 <a href="{{ route('user.logout') }}"
