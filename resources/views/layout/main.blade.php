@@ -30,7 +30,7 @@
                 <span class="text-xs text-grey-dark"> Pokhara</span>
             </div>
         </div>
-        {{dd(Auth::user())}}
+     
         @if (!empty(Auth::user()))
             <div class="sm:mb-0 self-center">
                
@@ -48,6 +48,7 @@
             </div>
         @endif
     </nav>
+    {{dd(Auth::user())}}
     @yield('content')
     @livewireScripts
 </body>
